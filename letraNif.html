@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cálculo de Letra NIF</title>
 </head>
     <body>
-        <h1>Cálculo de la Letra Nif</h1>
-        <div id="claculo-resultado">
-            <label for="">Número de NIF</label>
-            <input type="text" id="nif">
-            <button id="calcular">Calcular</button>
+        <h1>Cálculo de la Letra NIF</h1>
+        <div id="calculo-resultado">
+            <label for="nif">Número de NIF:</label> <!-- Añadido "for" y dos puntos -->
+            <input type="text" id="nif" maxlength="8" placeholder="12345678">
+            <button onclick="calcularLetraNIF()">Calcular</button>
+            <!-- Añadido para mostrar el resultado -->
         </div>
+        <p id="resultado">Introduce tu DNI y haz clic en Calcular</p> 
+        <script src="letraNif.js"></script> <!-- Correctamente colocado al final -->
     </body>
 </html>
